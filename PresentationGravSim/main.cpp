@@ -197,6 +197,7 @@ void graphicsLoop(HWND hWnd) {
 		frameMan.delay();
 	}
 
+	ReleaseDC(hWnd, finalG);
 	DeleteDC(g);																																		// Release all resources before exiting.
 	DeleteObject(bmp);
 	DeleteObject(bodyPen);
